@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:autofit="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+
+
+
+
+    <com.chauthai.swipereveallayout.SwipeRevealLayout
+        android:id="@+id/swipe_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:dragEdge="right"
+        app:mode="same_level"
+        >
+
+
+        <FrameLayout
+            android:id="@+id/delete_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="140dp"
+            android:layout_marginLeft="15dp"
+            android:layout_centerInParent="true"
+            android:background="@color/money"
+            android:foregroundGravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="130dp"
+                android:orientation="vertical"
+                android:background="@color/money">
+
+                <!--<Button-->
+                    <!--android:id="@+id/btnDeleteStudentData"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:gravity="bottom"-->
+                    <!--android:onClick="deleteOnClick"-->
+                    <!--android:textColor="@android:color/white"-->
+                    <!--android:background="@color/money"-->
+                    <!--/>-->
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:text="DELETE"
+                    android:padding="20dp"
+                    android:background="@color/money"
+                    android:gravity="center"
+                    android:textColor="#ffffff"/>
+
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout
+            android:id="@+id/framelayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp">
+
+                <ImageView
+                    android:id="@+id/imageView1"
+                    android:layout_width="94dp"
+                    android:layout_height="98dp"
+                    android:paddingTop="20dp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_weight="1"
+                    android:layout_gravity="center">
+
+                    <me.grantland.widget.AutofitTextView
+                    android:id="@+id/first"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="234"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:maxLines="1"
+                    android:textSize="30dp"
+                    autofit:minTextSize="15sp"
+                    android:textStyle="bold"/>
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/second"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="234"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:maxLines="1"
+                        android:textSize="20dp"
+                        autofit:minTextSize="10sp"
+                        android:textStyle="bold"/>
+
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/third"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="234"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:maxLines="1"
+                        android:textSize="20dp"
+                        autofit:minTextSize="10sp"
+                        />
+
+                    <me.grantland.widget.AutofitTextView
+                        android:id="@+id/fourth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="date"
+                        android:singleLine="true"
+                        android:textColor="@color/black"
+                        android:maxLines="1"
+                        android:textSize="15dp"
+                        autofit:minTextSize="10sp" />
+
+                </LinearLayout>
+
+
+                <me.grantland.widget.AutofitTextView
+                    android:id="@+id/money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="-1.00"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:maxLines="1"
+                    android:textSize="30dp"
+                    autofit:minTextSize="10sp"
+                    android:textStyle="bold"
+                    android:layout_margin="25dp"
+                    android:paddingRight="10dp"/>
+
+
+            </LinearLayout>
+        </FrameLayout>
+    </com.chauthai.swipereveallayout.SwipeRevealLayout>
+    <View
+        android:id="@+id/shortView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/grey"
+        android:layout_marginLeft="10dp"/>
+</LinearLayout>

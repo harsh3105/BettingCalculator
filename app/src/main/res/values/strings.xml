@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name="event_empty">Please enter event field!</string>
+    <string name="outcome_empty">Please enter outcome field!</string>
+    <string name="bookmark_empty">Please enter bookmarks field!</string>
+    <string name="exchange_empty">Please enter exchange field!</string>
+    <string name="error">Error</string>
+    <string name="alert">Alert</string>
+    <string name="clear_data">Are you sure you want to clear history?</string>
+    <string name="successful">Success</string>
+    <string name="clear_success_message" >History clear successfully!</string>
+</resources>
